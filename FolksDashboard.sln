@@ -10,6 +10,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolksDashboard", "FolksDash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{362FC7A9-1A6E-40F1-A3F4-7FF77CBE4DE2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1224F9F7-B1DF-411C-8DD3-0628A1834142}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
