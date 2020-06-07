@@ -1,0 +1,24 @@
+﻿@inherits ServiceAddBase
+
+<h2>Add Services</h2>
+<br />
+<div class="row">
+    <div class="col-sm-12">
+        <EditForm Model="@newService" OnValidSubmit="@InsertService" class="cf">
+            <div class="half left cf">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+
+                <InputText id="Name" @bind-Value="newService.Name" placeholder="Name"/>
+                <InputNumber id="Fee" @bind-Value="newService.Fee" placeholder="Fee"/>
+            </div>
+            <div class="half right cf">
+                <InputTextArea id="Description" @bind-Value="newService.Description" placeholder="Description" />
+            </div>
+            <button type="submit" class="btn btn-primary" id="input-submit ">Submit</button>
+        </EditForm>
+    </div>
+</div>
+
+@code {
+}

@@ -1,0 +1,89 @@
+﻿@inherits ExpenseMonthBase
+
+<h3>Monthly Expenses</h3>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <canvas id="barchart"></canvas>
+        </div>
+        <div class="row mt-lg-5">
+            @if (expenses is null)
+            {
+                <p><em>Loading....</em></p>
+            }
+            else
+            {
+                @foreach (var expense in expenses)
+                {
+                    <div class="col">
+                        @foreach (var e in expense.Value)
+                        {
+                            <table classs="table table-collapse-phone">
+                                <thead>
+                                    <tr>
+                                        <th>@expense.Key</th>
+                                        <th class="hidden-mobile"></th>
+                                        <th class="hidden-mobile"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">January</th>
+                                        <td>@e.January</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">February</th>
+                                        <td>@e.February</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">March</th>
+                                        <td>@e.March</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">April</th>
+                                        <td>@e.April</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">May</th>
+                                        <td>@e.May</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">June</th>
+                                        <td>@e.June</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">July</th>
+                                        <td>@e.July</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">August</th>
+                                        <td>@e.August</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">September</th>
+                                        <td>@e.September</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">October</th>
+                                        <td>@e.October</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">November</th>
+                                        <td>@e.November</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">December</th>
+                                        <td>@e.December</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        }
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+}

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FolksDashboard", "FolksDashboard\FolksDashboard.csproj", "{D7B4C1D8-DB0A-4B52-9A34-F79B60CE5513}"
+	ProjectSection(ProjectDependencies) = postProject
+		{362FC7A9-1A6E-40F1-A3F4-7FF77CBE4DE2} = {362FC7A9-1A6E-40F1-A3F4-7FF77CBE4DE2}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLibrary", "DataAccessLibrary\DataAccessLibrary.csproj", "{362FC7A9-1A6E-40F1-A3F4-7FF77CBE4DE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7B4C1D8-DB0A-4B52-9A34-F79B60CE5513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B4C1D8-DB0A-4B52-9A34-F79B60CE5513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B4C1D8-DB0A-4B52-9A34-F79B60CE5513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B4C1D8-DB0A-4B52-9A34-F79B60CE5513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{362FC7A9-1A6E-40F1-A3F4-7FF77CBE4DE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{362FC7A9-1A6E-40F1-A3F4-7FF77CBE4DE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{362FC7A9-1A6E-40F1-A3F4-7FF77CBE4DE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{362FC7A9-1A6E-40F1-A3F4-7FF77CBE4DE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6694CF60-481E-4EDA-A3E1-125F8461B07B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿@inherits ServiceCardBase
+
+    <div class="container">
+        <h2>Services Offered By Folks:</h2>
+        <br />
+        <div class="row">
+            @if (service is null)
+            {
+                <p><em>Loading....</em></p>
+            }
+            else
+            {
+                foreach (var s in service)
+                {
+                    <div class="col-sm m-lg-4">
+                        <div class="product-card">
+                            <div class="card" style="width: 18rem;">
+                                <img class="card-img-top" src="@imageUrl" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">@s.Name</h5>
+                                    <p class="card-text">@s.Description</p>
+                                    <p class="card-text">Price: @s.Fee</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+        <br />
+        <ServiceAdd OnInsert = "OnInitializedAsync"></ServiceAdd>
+    </div>
+
+@code {
+}
