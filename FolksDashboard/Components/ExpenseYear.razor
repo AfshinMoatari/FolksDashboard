@@ -1,0 +1,47 @@
+﻿@inherits ExpenseYearBase
+
+<h3>Yearly Expenses</h3>
+<div class="container">
+    <div class="row mb-lg-5">
+        <div class="col-12">
+            <canvas id="doughnutchart"></canvas>
+        </div>
+    </div>
+        <div class="row mt-lg-5">
+            @if (expensesY is null)
+            {
+                <p><em>Loading....</em></p>
+            }
+            else
+            {
+                @foreach (var expenseY in expensesY)
+                {
+                    <div class="col">
+                        <table classs="table table-collapse-phone">
+                            <thead>
+                                <tr>
+                                    <th>@expenseY.Name</th>
+                                    <th class="hidden-mobile"></th>
+                                    <th class="hidden-mobile"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Year</th>
+                                    <td>@expenseY.Year</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total Amount</th>
+                                    <td>@expenseY.Total</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                }
+            }
+        </div>
+    
+</div>
+
+@code {
+}

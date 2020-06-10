@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DataAccessLibrary.Models
 {
-    public class ExpenseModel
+    public class ExpenseMonthModel
     {
         public decimal January { get; set; }
         public decimal February { get; set; }

@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using DataAccessLibrary;
 using DataAccessLibrary.DataObjects;
 using DataAccessLibrary.Interfaces;
+using FolksDashboard.Services;
 
 namespace FolksDashboard
 {
@@ -32,6 +33,7 @@ namespace FolksDashboard
             services.AddServerSideBlazor();
             services.AddTransient<ISqlDataAccess, SqlDataAccess>();
             services.AddTransient<IServiceData, ServiceData>();
+            services.AddTransient<IExpenseService, ExpenseService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
